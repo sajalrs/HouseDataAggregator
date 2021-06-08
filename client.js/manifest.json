@@ -1,0 +1,19 @@
+{
+  "name": "Home Data Aggregator ",
+  "description": "Build an Extension!",
+
+  "background": {
+    "service_worker": "background.js",
+    "matches": ["*://*.onehome.com/*/property/*"]
+  },
+
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.onehome.com/*/property/*"],
+      "js": ["client.js"]
+    }
+  ],
+  "version": "1.0",
+  "manifest_version": 3
+}
